@@ -27,6 +27,7 @@ form.addEventListener("submit", function (event){
         });
         
         ul.appendChild(li);
-        input.value = "";
     }
+    
+    input.value = "";
 });
