@@ -12,12 +12,12 @@ form.addEventListener("submit", function (event){
         const li = document.createElement("li");
         li.innerText = temp_data[random];
         li.classList.add("list-group-item")  
-    }
 
-    li.addEventListener("click", function (event){
-        event.preventDefault();
-        li.remove();
-    });
-    
-    ul.appendChild(li);
+        li.addEventListener("click", function (event){
+            event.preventDefault();
+            li.remove();
+        });
+        
+        ul.appendChild(li);
+    }
 });
