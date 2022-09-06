@@ -12,13 +12,9 @@ form.addEventListener("submit", function (event){
     li.innerText = temp;
     li.classList.add("list-group-item")
     
-    li.addEventListener("contextmenu", function (event) {
+    li.addEventListener("click", function (event) {
         event.preventDefault();
         li.remove();
-    });
-    
-    li.addEventListener("click", function () {
-       li.classList.toggle("text-decoration-line-through");
     });
     
     ul.appendChild(li);
