@@ -3,7 +3,7 @@ const input = document.getElementById("input");
 const ul = document.getElementById("ul");
 let temp_data = ["35.7", "35.8", "35.9","36.0", "36.1","36.2","36.3","36.4", "36.5", "36.6", "36.7", "36.8", "36.9"]; 
 
-form.addEventListener("submit", function (event){
+form.addEventListener("submit",(event)=>{
     event.preventDefault();
     const lists = document.querySelectorAll("li");
     for(i=0;i<lists.length;i++){
@@ -17,12 +17,12 @@ form.addEventListener("submit", function (event){
         li.innerText = temp_data[random];
         li.classList.add("list-group-item")  
 
-        li.addEventListener("click", function (event){
+        li.addEventListener("click",(event)=>{
             event.preventDefault();
             li.remove();
         });
 
-        li.addEventListener("contextmenu", function (){
+        li.addEventListener("contextmenu",()=>{
             li.classList.toggle("text-decoration-line-through");
         });
         
